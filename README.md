@@ -1,3 +1,17 @@
+# Zoup
+
+Zoup é uma rede social inovadora projetada especialmente para pessoas com mais de 60 anos. O objetivo da plataforma é criar um espaço 
+seguro e amigável onde os usuários possam se conectar com amigos e familiares, compartilhar momentos importantes de suas vidas e descobrir novos conteúdos de interesse.
+
+Esse rede social e como se fosse uma mistura de tiktok com o instagram
+
+Proporcionando para o usuario várias opcoês de entretenimento.
+
+
+
+
+
+
 # Tudo que o Zoup pode fazer
 
 
