@@ -86,3 +86,9 @@ A plataforma deve seguir diretrizes de acessibilidade web para garantir que todo
 ![Captura de tela 2024-07-16 152015](https://github.com/user-attachments/assets/042fcfa1-c2a0-4199-8801-827d311002c8)
 
 
+# Visual do Zoup no web
+
+![Captura de tela 2024-07-16 144521](https://github.com/user-attachments/assets/b1ad362c-0509-47aa-87d7-127f6974453e)
+![Captura de tela 2024-07-16 152101](https://github.com/user-attachments/assets/f2dc6cf3-0451-4ed4-8e08-c9c1ce5edc70)
+![Captura de tela 2024-07-16 152144](https://github.com/user-attachments/assets/b37858b7-9620-4332-abe6-70d1c881aa47)
+![Captura de tela 2024-07-16 152125](https://github.com/user-attachments/assets/e58441a4-2c83-4be8-99cc-875228718afe)
