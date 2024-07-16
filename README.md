@@ -80,8 +80,9 @@ Os tempos de carregamento de páginas e conteúdos devem ser otimizados para gar
 A plataforma deve seguir diretrizes de acessibilidade web para garantir que todos os usuários, incluindo aqueles com deficiências visuais ou motoras, possam utilizar a rede social sem dificuldades excessivas.
 
 
-# Visual do Zoup
+# Visual do Zoup no mobile
 
 
+![Captura de tela 2024-07-16 152015](https://github.com/user-attachments/assets/042fcfa1-c2a0-4199-8801-827d311002c8)
 
 
