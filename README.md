@@ -93,3 +93,74 @@ A plataforma deve seguir diretrizes de acessibilidade web para garantir que todo
 ![Captura de tela 2024-07-16 152734](https://github.com/user-attachments/assets/0cf4cb05-9d03-49c3-8997-9ccccd4dc3f3)
 ![Captura de tela 2024-07-16 152759](https://github.com/user-attachments/assets/bf66c759-b346-4dcd-a013-0f77239795cb)
 
+# Estrutura de banco de dados
+
+
+
+# Usuários (Users)
+user_id: ID único do usuário (Chave primária)
+name: Nome do usuário
+date_of_birth: Data de nascimento
+email: Endereço de e-mail único
+password_hash: Hash da senha
+verified: Indica se a conta está verificada (booleano)
+created_at: Data e hora de criação da conta
+
+# Vídeos (Videos)
+video_id: ID único do vídeo (Chave primária)
+user_id: ID do usuário que publicou o vídeo (Chave estrangeira referenciando Users)
+video_path: Caminho do arquivo de vídeo armazenado
+format: Formato do vídeo (e.g., mp4, avi)
+size: Tamanho do vídeo em bytes
+created_at: Data e hora de publicação do vídeo
+
+# Fotos (Photos)
+photo_id: ID único da foto (Chave primária)
+user_id: ID do usuário que publicou a foto (Chave estrangeira referenciando Users)
+photo_path: Caminho do arquivo de foto armazenado
+format: Formato da foto (e.g., jpg, png)
+size: Tamanho da foto em bytes
+created_at: Data e hora de publicação da foto
+
+# Postagens (Posts)
+post_id: ID único da postagem (Chave primária)
+user_id: ID do usuário que criou a postagem (Chave estrangeira referenciando Users)
+content: Conteúdo textual da postagem
+created_at: Data e hora de publicação da postagem
+updated_at: Data e hora da última atualização da postagem
+
+# Comentários (Comments)
+comment_id: ID único do comentário (Chave primária)
+post_id: ID da postagem comentada (Chave estrangeira referenciando Posts)
+user_id: ID do usuário que fez o comentário (Chave estrangeira referenciando Users)
+content: Conteúdo do comentário
+created_at: Data e hora de publicação do comentário
+updated_at: Data e hora da última atualização do comentário
+
+# Curtidas (Likes)
+like_id: ID único da curtida (Chave primária)
+post_id: ID da postagem curtida (Chave estrangeira referenciando Posts)
+user_id: ID do usuário que curtiu a postagem (Chave estrangeira referenciando Users)
+created_at: Data e hora da curtida
+
+# Amigos (Friends)
+user_id: ID do usuário (Chave estrangeira referenciando Users)
+friend_id: ID do amigo (Chave estrangeira referenciando Users)
+status: Status da amizade (e.g., pendente, aceito)
+created_at: Data e hora de criação da relação de amizade
+
+# Configurações da Conta (Settings)
+user_id: ID do usuário (Chave estrangeira referenciando Users)
+privacy_settings: Configurações de privacidade (armazenadas em JSON)
+notification_settings: Configurações de notificações (armazenadas em JSON)
+other_preferences: Outras preferências da conta (armazenadas em JSON)
+updated_at: Data e hora da última atualização das configurações
+
+# Relacionamentos
+Um usuário pode publicar vários vídeos (Users ↔ Videos)
+Um usuário pode publicar várias fotos (Users ↔ Photos)
+Um usuário pode criar várias postagens (Users ↔ Posts)
+Uma postagem pode ter vários comentários (Posts ↔ Comments)
+Uma postagem pode ter várias curtidas (Posts ↔ Likes)
+Um usuário pode ter vários amigos e ser amigo de vários usuários (Users ↔ Friends)
+Um usuário tem uma configuração de conta (Users ↔ Settings)
